@@ -6,7 +6,7 @@ ref = '(not(c[0]) and c[1]) or (c[1] and (not(c[1]) or not(c[1])))'
 
 # create permutations of booleans [[True, True, False], [True, False, False], ...]
 bools = [True, False]
-cases = ([(i, j, k) for i in bools for j in bools for k in bools])
+cases = [(i, j, k) for i in bools for j in bools for k in bools]
 
 # alternatives/options
 alts = [['a', 'c[1] and not(c[0]) and not(c[1])'],
